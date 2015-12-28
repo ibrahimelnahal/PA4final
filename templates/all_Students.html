@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Studnets</title>
+</head> 
+<body>
+ <h1>Students</h1>
+ <ul> {% for Student in Students_list %} 
+    <li>{{ Student.first_name }}, {{ Student.last_name }}, {{ Student.email }}</li> 
+{% endfor %} 
+</ul> 
+</body>
+</html>

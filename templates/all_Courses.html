@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Courses</title>
+</head> 
+<body>
+ <h1>Courses</h1>
+ <ul> {% for Course in Courses_list %} 
+    <li>{{ Course.name }}, {{ Course.code }}, {{ Course.classroom }}, {{ Course.time }}</li> 
+{% endfor %} 
+</ul> 
+</body>
+</html>
