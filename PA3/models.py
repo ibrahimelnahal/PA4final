@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+#from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
@@ -22,7 +22,7 @@ class Course(models.Model):
     time=models.TimeField()
     classroom=models.CharField(max_length=6)
     teacher = models.ForeignKey(Teacher)
-    # students = models.ManyToManyField(Student)
+    students = models.ManyToManyField(Student)
 
 
 

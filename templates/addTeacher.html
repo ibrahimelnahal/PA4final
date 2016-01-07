@@ -1,10 +1,11 @@
-<html>
-<head>
-    <title>Add Teachers</title>
+{% load static %}
+<html> 
+<head> 
+    <link rel="stylesheet" href="{% static "projectcss.css" %}" >
+    <title>Add Teacher</title> 
 </head>
 <body>
     <h1>Add Teacher</h1>
-
     {% if form.errors %}
         <p style="color: red;">
             Please correct the error{{ form.errors|pluralize }} below.
